@@ -1,0 +1,20 @@
+-un etudiant travail sur un projetfinal = un;
+-un projetFinal  est associe a plusieurs etudiants  = plusieurs.
+
+
+CREATE TABLE etudiants(
+	numeroEtudiant INTEGER PRIMARY KEY,
+	nomEtudiant TEXT,
+	titreProjetFinal TEXT REFERENCES projetFinal
+	
+	
+);
+CREATE TABLE projetFinal (
+	titreProjetFinal TEXT PRIMARY KEY		
+	
+);
+CREATE TABLE eneignants (
+	numeroEmployé INTEGER PRIMARY KEY,	
+	nomEnseignant TEXT
+	
+);
